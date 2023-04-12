@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p hugo-server bookshop",
     "hugo-server-watch": "hugo server -D --watch",
-    "hugo-server": "hugo server -D -p 1233",
+    "hugo-server": "hugo server -D -p 6061",
     "init": "npx @bookshop/init --component",
     "build": "hugo --source ./ --destination public --baseURL /",
     "bookshop-update": "npx @bookshop/up@latest",
