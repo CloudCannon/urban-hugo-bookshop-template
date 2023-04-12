@@ -1,3 +1,13 @@
-<div class="c-call-to-action">
-    <p>{{ .text }}</p>
-</div>
+{{ $c := "c-call-to-action" }}
+
+<div class="{{ .c }}__inner-wrapper component">
+    <div class="{{ .c }}__content">
+      {{ .heading_html | safeHTML }}
+      
+    </div>
+    {{ if .button_label }}
+        <div class="{{ .c }}__button">
+            {{ .button_html }}
+        </div>
+    {{ end }}
+  </div>
