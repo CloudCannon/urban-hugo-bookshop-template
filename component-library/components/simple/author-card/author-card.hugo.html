@@ -1,0 +1,33 @@
+{{ $c := "c-author-card" }}
+{{ $author_path := printf "/staff_members/%s/" .Params.author_staff_member }}
+{{ with $author := where $.Site.Data.staff_members "url" $author_path | first }}
+	<div class="{{ $c }}__inner-wrapper">
+		<h4 class="{{ $c }}__heading">Meet the author</h4>
+		{{ if $author.twitter }}
+			<a class="{{ $c }}__content"
+				href="https://twitter.com/{{ $author.twitter }}">
+		{{ else }}
+			<div class="{{ $c }}__content">
+		{{ end }}
+			<div class="{{ $c }}__top">
+				<img class="{{ $c }}__image" 
+					 src="{{ $author.image }}" 
+					 alt="{{ $author.name }}" />
+				<div class="{{ $c }}__details">
+					<p class="{{ $c }}__name">{{ $author.name }}</p>
+					{{ with $author.position }}
+						<p class="{{ $c }}__role">{{ . }}</p>
+					{{ end }}
+					{{ with $author.phone }}
+						<p class="{{ $c }}__phone"><a href="tel:{{ . }}">{{ . }}</a> ext {{ $author.phone_extension }}</p>
+					{{ end }}
+				</div>
+			</div>
+			<p class="{{ $c }}__text">{{ $author.blurb }}</p>
+		{{ if $author.twitter }}
+			</a>
+		{{ else }}
+			</div>
+		{{ end }}
+	</div>
+{{ end }}
