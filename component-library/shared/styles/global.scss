@@ -1,6 +1,12 @@
 // Files in shared/styles will be used as global stylesheets on your site,
 // as well as in the component browser and screenshots.
 
+:root {
+    --s-design-min: 375;
+    --s-design-max: 900;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 html, body {
     
 }
