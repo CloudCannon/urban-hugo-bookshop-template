@@ -9,6 +9,18 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  heading: ""
+  lower_text: ""
+  form_submission_email: ""                                                                                                                                         # The email address form submissions will be sent to
+  component_theme: "Light"
+  company_details:
+    - address: ""
+      postal_address: ""
+      phone: ""
+      email: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
   heading: "Contact"
   lower_text: "Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free. "
   form_submission_email: "admin@example.com"                                                                                                                                         # The email address form submissions will be sent to
@@ -18,9 +30,6 @@ blueprint:
       postal_address: ""
       phone: ""
       email: "support@example.com"
-
-# Overrides any fields in the blueprint when viewing this component in the component browser
-preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

@@ -3,9 +3,9 @@ spec:
   structures:
     - content_blocks
   label: "Updates"
-  description:
-  icon:
-  tags: []
+  description: "A grid of items detailing recent updates"
+  icon: "wysiwyg"
+  tags: ["Content"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
