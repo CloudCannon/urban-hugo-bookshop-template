@@ -2,14 +2,14 @@
 spec:
   structures:
     - content_blocks
-  label: "Contact-cards"
-  description:
-  icon:
-  tags: []
+  label: "Divider"
+  description: "A horizontal rule/divider"
+  icon: "wysiwyg"
+  tags: ["Content"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  display_divider: true
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

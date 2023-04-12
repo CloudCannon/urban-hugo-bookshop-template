@@ -3,16 +3,19 @@ spec:
   structures:
     - content_blocks
   label: "Content"
-  description:
-  icon:
-  tags: []
+  description:"Generic rich content area"
+  icon: "wysiwyg"
+  tags: ["Text"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  content_html: ""
+  component_theme: "Light"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
+  content_html: "<p>This is a <b>testing template</b> made with the <a href='https://github.com/cloudcannon/bookshop' target='_blank'>bookshop component system.</a></p>"
+  component_theme: "Light"
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

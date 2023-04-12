@@ -2,14 +2,21 @@
 spec:
   structures:
     - content_blocks
-  label: "Divider"
+  label: "Button"
   description:
   icon:
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  label: "Get Started Free"
+  link_url: "/sign-up/"
+  variant:
+    select:
+      - "Transparent"
+      - "Filled"
+      - "Plain Text"
+  open_in_new_tab: false
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

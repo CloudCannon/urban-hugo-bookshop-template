@@ -3,13 +3,37 @@ spec:
   structures:
     - content_blocks
   label: "Gallery"
-  description:
-  icon:
-  tags: []
+  description: "An image/link gallery"
+  icon: "wysiwyg"
+  tags: ["Gallery"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  details:
+    - show_details: true
+      heading: "Some of our work"
+      subheading: "We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure."
+      text_color: "#ffffff"
+      button_label: "View Full Portfolio →"
+      button_link_url: "/portfolio/"
+      button_variant.select: ["Transparent", "Filled"]
+  content_arrangement:
+    select:
+      - "Left"
+      - "Right"
+  image_borders: true
+  component_theme: "Dark"
+  gallery_items:
+    image: "//placekitten.com/400/440?a=.png"
+    image_title: "Item One"
+    image_caption: "Caption Text"
+    link_url: "//placekitten.com/400/440?a=.png"
+    
+  
+
+      
+  image_borders = true
+  component_theme = "Dark"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

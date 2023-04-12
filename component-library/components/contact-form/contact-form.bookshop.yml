@@ -2,14 +2,22 @@
 spec:
   structures:
     - content_blocks
-  label: "Contact-form"
-  description:
-  icon:
-  tags: []
+  label: "Contact Form"
+  description: "Generic contact form"
+  icon: "wysiwyg"
+  tags: ["Text"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  heading: "Contact"
+  lower_text: "Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free. "
+  form_submission_email: "admin@example.com"                                                                                                                                         # The email address form submissions will be sent to
+  component_theme: "Light"
+  company_details:
+    - address: "1 Bond Street, Dunedin, New Zealand"
+      postal_address: ""
+      phone: ""
+      email: "support@example.com"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

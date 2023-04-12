@@ -2,14 +2,16 @@
 spec:
   structures:
     - content_blocks
-  label: "Page-heading"
-  description:
-  icon:
-  tags: []
+  label: "Page Heading"
+  description:  "Generic page heading"
+  icon: "wysiwyg"
+  tags: ["Content"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  heading: "Blog"
+  subheading: "Keep up with the latest news"
+  component_theme: "Light"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

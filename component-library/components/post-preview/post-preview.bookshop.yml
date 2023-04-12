@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Post-preview"
+  label: "Post Preview"
   description:
-  icon:
+  icon: "wysiwyg"
   tags: []
 
 # Defines the structure of this component, as well as the default values

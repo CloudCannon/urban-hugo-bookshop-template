@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: "Post-header"
+  label: "Post Header"
   description:
-  icon:
+  icon: "wysiwyg"
   tags: []
 
 # Defines the structure of this component, as well as the default values

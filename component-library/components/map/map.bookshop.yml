@@ -3,13 +3,19 @@ spec:
   structures:
     - content_blocks
   label: "Map"
-  description:
-  icon:
-  tags: []
+  description: "Google maps page block"
+  icon: "wysiwyg"
+  tags: ["Content"]
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  google_maps_api_key: ''
+  component_theme: "Light"
+  map:
+    latitude: -45.8779128
+    longitude: 170.5026709
+    address: "1 Bond Street, Dunedin, New Zealand"
+    zoom: 13
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
