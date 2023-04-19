@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+    // --font: "Helvetica Neue", "Helvetica", "Arial";
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --headings-fonts: "Helvetica Neue", "Helvetica", "Arial";
+    --component-padding: 100px;
+    --navigation-offset: 70px;
+
+    --breakpoint-max: 1180px;
+    --breakpoint-min: 900px;
+
+    --s-design-min: 375;
+    --s-design-max: 900;
+
+    --fv-calc: (100vw - var(--s-design-min) * 1px) / (var(--s-design-max) - var(--s-design-min));
+    --s-30-50: clamp(30px, calc(30px + 20 * var(--fv-calc)), 50px);
+    --s-155-185: clamp(155px, calc(155px + 30 * var(--fv-calc)), 185px);
+    --s-350-390: clamp(350px, calc(350px + 40 * var(--fv-calc)), 390px);
+    // Light
+    --page-color:  #eee;
+    --component-color: #ffffff;
+    --dark-component-color: #222222;
+    --brand-color: #FFA715;
+    --headings-color: #000000;
+    --text-color: #666666;
+    --light-text-color: #ffffff;
+    --link-color: #FFA715;
+    --button-fill: #ffffff;
+    --button-fill-text: #FFA715;
+    --tag-color: #eeeeee;
+    --border-color: #dfdfdf;
+    --shadows-color: #f7f7f7;
+    --navigation-color: #FFA715;
+    --footer-color: #222222;
+    --footer-link-color: #999999;
+    --footer-link-hover-color: #ffffff;
+    // Dark
+    --dark-page-color: #131313;
+    --dark-light-component-color: #292929;
+    --dark-dark-component-color: #1a1a1a;
+    --dark-brand-color: #FFA715;
+    --dark-headings-color: #FFFFFF;
+    --dark-text-color: #fefefe;
+    --dark-light-text-color: #ffffff;
+    --dark-link-color: #ffffff;
+    --dark-button-fill: #222222;
+    --dark-button-fill-text: #ffffff;
+    --dark-tag-color: #444444;
+    --dark-border-color: #686868;
+    --dark-shadows-color: #181818;
+    --dark-navigation-color: #202020;
+    --dark-footer-color: #000000;
+    --dark-footer-link-color: #999999;
+    --dark-footer-link-hover-color: #ffffff;
+
+    // --headings-font: "Space Grotesk", sans-serif;
+    // --body-font: "Sora", sans-serif;
+    --content-font-size: 2.2em;
+
+    // body {
+    //     &.dark {
+    //         --page-color: --dark-page-color;
+    //         --component-color: --dark-light-component-color;
+    //         --dark-component-color: --dark-dark-component-color;
+    //         --brand-color: --dark-brand-color;
+    //         --headings-color: --dark-headings-color;
+    //         --text-color: --dark-text-color;
+    //         --light-text-color: --dark-light-text-color;
+    //         --link-color: --dark-link-color;
+    //         --button-fill: --dark-button-fill;
+    //         --button-fill-text: --dark-button-fill-text;
+    //         --tag-color: --dark-tag-color;
+    //         --border-color: --dark-border-color;
+    //         --shadows-color: --dark-shadows-color;
+    //         --navigation-color: --dark-navigation-color;
+    //         --footer-color: --dark-footer-color;
+    //         --footer-link-color: --dark-footer-link-color;
+    //         --footer-link-hover-color: --dark-footer-link-hover-color;
+    //     }
+    // }
+
+}
