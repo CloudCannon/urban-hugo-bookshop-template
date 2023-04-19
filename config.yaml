@@ -1,0 +1,14 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Urban
+theme_name: ''
+theme_data: ''
+module:
+  replacements: components.local -> ../component-library
+  imports:
+    - path: components.local
+    - path: github.com/cloudcannon/bookshop/hugo/v3
+
+taxonomies:
+  tag: tags
+  category: categories
