@@ -26,22 +26,19 @@
       {{ end }}
   
   
-  
-    {{/*  TODO: fix this  */}}
-      {{/*  <div class="dark-mode-toggle">
+
+      <div class="dark-mode-toggle">
           <a id="js-dark-mode" class="n-button">
-              {{- $svg := resources.Get "images/svg/darklightmode.svg" -}}
+              {{- $svg := "svg/darklightmode.svg" -}}
               {{- if $svg }}
-                  {{- $svg.Content | safeHTML -}}
-              {{- else }}
-                  <span>SVG file not found</span>
+                  {{- partial $svg . -}}
               {{- end }}
               <span id="js-mode-label">Dark Mode</span>
           </a>
-      </div>  */}}
+      </div>
       
       
-      {{/*  <script type="text/javascript" src="/assets/js/dark-mode.js"></script>  */}}
+      <script type="text/javascript" src="/js/dark-mode.js"></script>
   
       {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
     </div>

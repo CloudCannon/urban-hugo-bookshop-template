@@ -2,6 +2,7 @@ var modeButton = document.getElementById('js-dark-mode');
 var modeLabel = document.getElementById('js-mode-label');
 var mode = localStorage.getItem('mode');
 
+
 function changeMode() {
 	document.body.classList.toggle('dark');
 
