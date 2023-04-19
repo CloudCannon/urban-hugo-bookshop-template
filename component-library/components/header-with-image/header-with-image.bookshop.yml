@@ -13,12 +13,7 @@ blueprint:
   subheading_html: ""
   text_color: "#ffffff"
   content_alignment: "Center"
-  button_label: ""
-  button_link_url: "/sign-up/"
-  button_variant:
-    select:
-      - "Transparent"
-      - "Filled"
+  button: bookshop:button
   image: ""
   component_theme: "Light"
 
@@ -28,13 +23,22 @@ preview:
   subheading_html: "<p>Track and optimize your sales team in real time.</p>"
   text_color: "#ffffff"
   content_alignment: "Center"
-  button_label: "Get Started Free"
-  button_link_url: "/sign-up/"
-  button_variant:
-    select:
-      - "Transparent"
-      - "Filled"
+  button: bookshop:button
   image: "/images/dashboard.png"
   component_theme: "Light"
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  content_alignment:
+    type: select
+    options:
+      values:
+        - "Left"
+        - "Center"
+        - "Right"
+  component_theme:
+    type: select
+    options:
+      values:
+        - "Light"
+        - "Dark"
+        - "Branded"
