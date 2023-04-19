@@ -1,4 +1,3 @@
----
 website_theme: Urban
 website_name: Urban
 live_domain_url:
@@ -10,4 +9,4 @@ icons:
   large_bookmark_icon_image: /images/icons/favicon-32.jpg
   small_mobile_icon_image: /images/icons/mobile-128.jpg
   large_mobile_icon_image: /images/icons/mobile-256.jpg
-  ---
+
