@@ -1,0 +1,46 @@
+<head>
+    <title>{{ .Site.Data.general_settings.website_name }}</title>
+    {{ if .Page.Params.SEO_options.prevent_indexing }}
+        <meta name="robots" content="noindex,nofollow">
+    {{ end }}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="{{ .Site.Data.general_settings.website_name }}">
+    <meta property="og:description" content="{{ .Page.Params.SEO_options.description | default .Site.Data.general_settings.website_description_text }}">
+    <meta property="og:image" content="{{ .Site.Data.general_settings.social_media_share_image }}">
+    <meta property="og:url" content="{{ .Site.Data.general_settings.live_domain_url }}{{ .Page.Permalink }}">
+    <meta name="twitter:card" content="{{ .Page.Params.SEO_options.description | default .Site.Data.general_settings.website_description_text }}">
+    <meta property="og:site_name" content="{{ .Site.Data.general_settings.website_name }}">
+    <meta name="twitter:image:alt" content="{{ .Site.Data.general_settings.social_media_share_image }}">
+    <meta property="twitter:title" content="{{ .Page.Title }}">
+    <meta name="twitter:site" content="{{ .Site.Data.general_settings.twitter_handle }}">
+    <link rel="canonical" href="{{ .Site.Data.general_settings.live_domain_url }}/">
+ 
+    <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
+    {{ $bookshop_scss_files := partial "bookshop_scss" . }}
+    <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
+    {{ $bookscss := $bookshop_scss_files | resources.Concat "css/bookshop.css" |
+    resources.ToCSS }}
+
+    <!-- fetch all *.scss files in the ./assets/css/ folder and combine and convert to css -->
+    {{/*  {{ $scss := resources.Get "sass/theme.scss" | resources.Concat "glob1.css" | resources.ToCSS }}  */}}
+    {{ $scss := resources.Get "/sass/theme.scss" | resources.ToCSS }}
+    <!-- combine all boofkshop, css and scss files into one resources -->
+    {{ $css := slice $scss $bookscss | resources.Concat "main.css"  }}
+    <!-- minify and fingerprint css while in production -->
+    {{ if hugo.IsProduction }}
+        {{ $css := $css | resources.Minify | resources.Fingerprint }} 
+    {{ end }} 
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{{ .Site.Data.general_settings.icons.large_bookmark_icon_image }}">
+    <link rel="icon" type="image/png" href="{{ .Site.Data.general_settings.icons.large_bookmark_icon_image }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ .Site.Data.general_settings.icons.small_bookmark_icon_image }}" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ .Site.Data.general_settings.icons.small_mobile_icon_image }}">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{ .Site.Data.general_settings.icons.large_mobile_icon_image }}">
+    <link rel="icon" sizes="128x128" href="{{ .Site.Data.general_settings.icons.small_mobile_icon_image }}" />
+    <link rel="icon" sizes="256x256" href="{{ .Site.Data.general_settings.icons.large_mobile_icon_image }}" />
+</head>
