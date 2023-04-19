@@ -1,0 +1,60 @@
+---
+title: Portfolio
+content_blocks:
+  - _bookshop_name: header-with-image
+    heading_html: <h1>Our Work</h1>
+    subheading_html: <p>See some of our proud customers with exemplary results.</p>
+    text_color: '#ffffff'
+    content_alignment: Left
+    button_label:
+    button_link_url:
+    button_variant:
+    image:
+    component_theme: Branded
+  - _bookshop_name: gallery
+    details:
+      show_details: false
+      heading:
+      subheading:
+      text_color: "#ffffff"
+      button:
+        label:
+        link_url:
+        variant:
+        submit:
+    content_arrangement:
+      - Left
+    image_borders: true
+    component_theme: "Dark"
+    gallery_items:
+      - image: "/images/clients/cause.jpg"
+        image_title: "Cause Template"
+        image_caption: "Not for profit template for Jekyll"
+        link_url: "/clients/cause/"
+      - image: "/images/clients/edition.png"
+        image_title: "Edition Template"
+        image_caption: "Product documentation template for Jekyll"
+        link_url: "/clients/edition/"
+      - image: "/images/clients/frisco.jpg"
+        image_title: "Frisco Template"
+        image_caption: "App marketing template for Jekyll"
+        link_url: "/clients/frisco"
+      - image: "/images/clients/hydra.png"
+        image_title: "Hydra Template"
+        image_caption: "Product marketing template for Jekyll"
+        link_url: "/clients/hydra/"
+      - image: "/images/clients/justice.jpg"
+        image_title: "Justice Template"
+        image_caption: "Law firm themed business template for Jekyll"
+        link_url: "/clients/justice/"
+      - image: "/images/clients/malt.jpg"
+        image_title: "Malt Template"
+        image_caption: "Event marketing template for Jekyll"
+        link_url: "/clients/malt/"
+SEO_options:
+  title:
+  description:
+  image:
+  prevent_indexing: false
+---
+
