@@ -1,0 +1,16 @@
+{{ $c := "c-footer" }} 
+
+{{ if .icon_image }}
+	{{ $platform := .link_label}}
+	{{ if in (slice "Facebook" "Twitter" "Youtube" "RSS") $platform }}
+		{{ $svg_url := printf "svg/%s.svg" (urlize $platform) }}
+		<span class="{{ $c }}__icon">
+			{{- partial $svg_url . -}}
+		</span>
+	{{ else }}
+		<img class="{{ $c }}__icon"
+	      	 src="{{ .icon_image }}"
+	      	 alt="{{ .link_label }}" />
+	{{ end }}
+{{ end }}
+<span class="{{ $c }}__link-label">{{ .link_label }}</span>
