@@ -1,4 +1,4 @@
-.c-image-and-text-blocks { $c: &;
+.c-image-and-text-blocks {
 
 	&__inner-wrapper {
 		padding: var(--component-padding) 0;
@@ -25,7 +25,7 @@
 				flex-direction: column;
 			}
 
-			#{$c}__content-wrapper {
+			&__content-wrapper {
 				padding: 0 0 0 40px;
 
 				@media (max-width: 900px) {
