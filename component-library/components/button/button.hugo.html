@@ -1,0 +1,34 @@
+{{ $n := "n-button" }}
+
+
+
+{{/*  The variable n is used for nested elements. This is to ensure
+the parent component's class variable isn't overridden for any
+items below  */}}
+
+
+{{ if  .submit  }} 
+	{{ if .label }}
+		{{ $label := .label }}
+	{{ else }}
+		{{ $label := "Send Message" }}
+	{{ end }}
+	<div class="{{ $n }} {{ $n }}--{{ .variant | urlize | default "filled" }}">
+		<input class="{{ $n }}__label"
+			   type="submit" 
+			   value="{{ .label }}" />
+	</div> 
+  {{ else }}
+  <a class="{{ $n }} {{ $n }}--{{ .variant | urlize | default "filled" }}"
+		href="{{ .link_url }}"
+		{{ if .open_in_new_tab }}
+			target="_blank"
+		{{ end }}>
+		<span class="{{ $n }}__label">{{ .label }}</span>
+	</a>  
+{{ end }}
+
+
+
+
+
