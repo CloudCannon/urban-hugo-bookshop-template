@@ -1,0 +1,55 @@
+{{ $c := "c-navigation" }}
+{{ $nav := $.Site.Data.navigation }}
+
+<div id="js-nav"
+     class="{{ $c }}
+         {{ if eq .RelPermalink "/" }}
+             {{ $c }}--home
+         {{ end }}"
+     {{ with $nav.background_image }}
+         style="background-image: url('{{ . }}')"
+     {{ end }}>
+    <div class="{{ $c }}__inner-wrapper">
+        {{ with $nav.logo_image }}
+            <a href="/">
+                <img src="{{ . }}" alt="{{ $.Site.Data.general_settings.website_name }}" />
+            </a>
+        {{ end }}
+        <h1 class="{{ $c }}__title"><a href="/">{{ $.Site.Data.general_settings.website_name }}</a></h1>
+        <ul class="{{ $c }}__nav-items">
+            {{ range $nav.navigation_items }}
+                <li class="{{ $c }}__item-wrapper">
+                    <a class="{{ $c }}__item
+                              {{ $c }}__item--{{ .link_type | urlize }}
+                              {{ if eq $.RelPermalink .link_url }}
+                              {{ $c }}__item--active
+                              {{ end }}"
+                       href="{{ .link_url }}">
+                       <span class="{{ $c }}__label">{{ .label }}</span>
+                    </a>
+                </li>
+            {{ end }}
+
+            <li class="{{ $c }}__item-wrapper {{ $c }}__item-wrapper--mobile">
+                <a id="js-mobile-toggle"
+                   class="{{ $c }}__item
+                          {{ $c }}__item--mobile-toggle"
+                   href="#">
+                   <span class="{{ $c }}__label">☰</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+	const navToggle = document.getElementById('js-mobile-toggle');
+	const nav = document.getElementById('js-nav');
+	
+	function toggleNav() {
+		nav.classList.toggle('c-navigation--open');
+	}
+
+	navToggle.addEventListener('click', toggleNav);
+</script> 
