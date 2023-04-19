@@ -1,3 +1,21 @@
-<div class="c-page">
-    <p>{{ .text }}</p>
-</div>
+{{ $c := "c-page" }}
+
+{{ if .content_blocks }}
+
+    {{ if gt ( .content_blocks | len ) 0 }}
+     {{ $blockCount := 0 }}  
+       {{ range .content_blocks }}
+           {{ $c := printf "c-%s" ._bookshop_name }}
+           <div class="{{ $c }}
+                        component-wrapper
+                        {{ if .component_theme }}
+                        component-wrapper--{{ .component_theme | urlize }}
+                        {{ else }}
+                        component-wrapper--light
+                        {{ end }}">
+             {{ partial "bookshop" (slice ._bookshop_name .)}}
+            </div>
+            {{ $blockCount = add $blockCount 1 }} 
+        {{ end }}    
+    {{ end }}  
+{{ end }}
