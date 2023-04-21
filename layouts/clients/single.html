@@ -1,0 +1,39 @@
+{{ define "main"}}
+<div class="layout layout--client">
+    {{ $heading := printf "<h1><a href='/portfolio' style='font-style: italic'>Our Work</a> / %s</h1>" .Title | safeHTML }}
+    {{ $subheading := printf "<p>%s</p>" .Params.subtitle | safeHTML }}
+    {{ $c := "c-header-with-image" }}
+    {{ $component_theme := "Branded" }}
+	<div class="{{ $c }}
+        cms-editor-link 
+        component-wrapper
+        {{ if $component_theme }}
+            component-wrapper--{{ $component_theme | urlize }}
+        {{ else }}
+            component-wrapper--light
+        {{ end }}">
+        {{ partial "bookshop" (slice "header-with-image" (dict "heading_html" $heading "subheading_html" $subheading "text_color" "#ffffff" "content_alignment" "Left" "button_label" false "button_link_url" false "button_variant" "Transparent" "image" false "component_theme" "Branded")) }}
+    </div>
+
+
+    {{ $c := "c-content" }}
+    {{ $component_theme := "Light" }}
+	<div class="{{ $c }}
+        cms-editor-link 
+        component-wrapper
+        {{ if $component_theme }}
+            component-wrapper--{{ $component_theme | urlize }}
+        {{ else }}
+            component-wrapper--light
+        {{ end }}">
+        {{ partial "bookshop" (slice "content" (dict "content_html" .Content "component_theme" $component_theme )) }}
+
+        {{ $button_text := printf "View %s →" .Title | safeHTML}}
+
+		<div class="component" style="padding-top: 0;">
+            {{ partial "bookshop" (slice "button" (dict "label" $button_text "link_url" .Params.external_url "variant" "Plain Text" "open_in_new_tab" true)) }}
+		</div>
+    </div>
+</div>
+
+{{ end }}

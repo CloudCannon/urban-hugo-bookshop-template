@@ -18,7 +18,7 @@
               using the same syntax as the standard Jekyll include tag.
           -->
           
-          {{ if and (in .RelPermalink "/blog/") (.IsPage) }}
+          {{ if and (or (in .RelPermalink "/clients/") (in .RelPermalink "/blog/")) (.IsPage) }}
             {{ block "main" . }}{{ end }}
           {{else}}
             {{ partial "bookshop" (slice "page" ( dict "content_blocks" .Params.content_blocks))}}
