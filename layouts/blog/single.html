@@ -1,0 +1,80 @@
+{{ define "main"}}
+
+{{ if in site.Data.general_settings.website_theme "Urban" }}
+	{{ $c := "c-post-header" }}
+	{{ $component_theme := "Branded" }}
+	{{ $heading := printf "<h2>%s</h2>" .Title | safeHTML }}
+
+	 <div class="{{ $c }}
+            cms-editor-link 
+            component-wrapper
+            {{ if $component_theme }}
+                component-wrapper--{{ $component_theme | urlize }}
+            {{ else }}
+                component-wrapper--light
+            {{ end }}">
+		<div class="component">
+			{{ partial "bookshop" (slice "post-header" (dict "nested" false "show_details" true "post" .Params )) }}
+		</div>  
+	</div>
+
+
+	{{ $c := "c-content" }}
+	{{ $component_theme := "Light" }}
+	<div class="{{ $c }}
+            cms-editor-link 
+            component-wrapper
+            {{ if $component_theme }}
+                component-wrapper--{{ $component_theme | urlize }}
+            {{ else }}
+                component-wrapper--light
+            {{ end }}">
+		{{ partial "bookshop" (slice "content" (dict "content_html" .Content "component_theme" $component_theme )) }}
+	</div>
+
+
+	{{ $c := "c-author-card" }}
+	{{ $component_theme := "Dark" }}
+	<div class="{{ $c }}
+            cms-editor-link 
+            component-wrapper
+            {{ if $component_theme }}
+                component-wrapper--{{ $component_theme | urlize }}
+            {{ else }}
+                component-wrapper--light
+            {{ end }}">
+        <div class="component">
+			{{ partial "bookshop" (slice "author-card" (dict "nested" false "post" .Params )) }}
+		</div>
+	</div>
+
+
+	{{ $c := "c-post-navigation" }}
+	{{ $component_theme := "Light" }}
+	<div class="{{ $c }}
+            cms-editor-link 
+            component-wrapper
+			{{ if $component_theme }}
+				component-wrapper--{{ $component_theme | urlize }}
+			{{ else }}
+				component-wrapper--light
+			{{ end }}">
+        <div class="component">
+			{{ partial "bookshop" (slice "post-navigation" (dict "post" .Page )) }}
+		</div>
+	</div>
+	{{ else }}
+
+		<div class="layout layout--post">
+			{{ $c := "c-post-header" }}
+			{{ partial "bookshop" (slice "post-header" (dict "nested" false "post" .Params )) }}
+	
+			{{ $component_theme := "Light" }}
+			{{ .Content }}
+			{{ if .Params.author_staff_member }}
+				{{ partial "bookshop" (slice "author-card" (dict "nested" false "post" .Params )) }}
+			{{ end }}
+			{{ partial "bookshop" (slice "post-navigation" (dict "nested" false "post" .Params )) }}}
+		</div>  
+{{ end }}
+{{end }}
