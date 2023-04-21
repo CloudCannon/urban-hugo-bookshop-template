@@ -1,0 +1,39 @@
+{{ $c := "c-author-card" }}
+
+{{ range where site.RegularPages "Section" "staff_members" }}
+		{{ $author := slice }}
+		{{ if eq .File.BaseFileName $.post.author_staff_member }}
+			{{ $author = $author | append .Params }}
+		{{ end }}
+	{{ range $author }}
+	<div class="{{ $c }}__inner-wrapper">
+		<h4 class="{{ $c }}__heading">Meet the author</h4>
+		{{ if .twitter }}
+			<a class="{{ $c }}__content"
+				href="https://twitter.com/{{ .twitter }}">
+		{{ else }}
+			<div class="{{ $c }}__content">
+		{{ end }}
+			<div class="{{ $c }}__top">
+				<img class="{{ $c }}__image" 
+					 src="{{ .image }}" 
+					 alt="{{.name }}" />
+				<div class="{{ $c }}__details">
+					<p class="{{ $c }}__name">{{ .name }}</p>
+					{{ with .position }}
+						<p class="{{ $c }}__role">{{ . }}</p>
+					{{ end }}
+					{{ with .phone }}
+						<p class="{{ $c }}__phone"><a href="tel:{{ . }}">{{ . }}</a> ext {{ .phone_extension }}</p>
+					{{ end }}
+				</div>
+			</div>
+			<p class="{{ $c }}__text">{{ .blurb }}</p>
+		{{ if .twitter }}
+			</a>
+		{{ else }}
+			</div>
+		{{ end }}
+	</div>
+	{{ end }}
+{{ end }}
