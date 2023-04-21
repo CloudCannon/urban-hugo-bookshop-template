@@ -3,8 +3,8 @@ spec:
   structures:
     - content_blocks
   label: "Content"
-  description:"Generic rich content area"
-  icon: "wysiwyg"
+  description: "Generic rich content area"
+  icon: 
   tags: ["Text"]
 
 # Defines the structure of this component, as well as the default values

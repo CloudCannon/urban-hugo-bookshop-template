@@ -1,3 +1,8 @@
-<div class="c-content">
-    <p>{{ .text }}</p>
+{{ $c := "c-content" }}
+
+<div class="{{ $c }}__inner-wrapper
+            component">
+    <div class="{{ $c }}__content-wrapper">
+        {{ .content_html | safeHTML }}
+    </div>
 </div>
