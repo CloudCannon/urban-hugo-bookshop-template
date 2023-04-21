@@ -17,7 +17,12 @@
               Bookshop components are accessed using the bookshop tag, 
               using the same syntax as the standard Jekyll include tag.
           -->
-          {{ partial "bookshop" (slice "page" ( dict "content_blocks" .Params.content_blocks))}}
+          
+          {{ if and (in .RelPermalink "/blog/") (.IsPage) }}
+            {{ block "main" . }}{{ end }}
+          {{else}}
+            {{ partial "bookshop" (slice "page" ( dict "content_blocks" .Params.content_blocks))}}
+          {{ end }}
   
         </div>
       </main>
