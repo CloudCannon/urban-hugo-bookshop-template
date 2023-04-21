@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: blog
 content_blocks:
   - _bookshop_name: header-with-image
     heading_html: <h1>Blog</h1>
@@ -10,8 +10,8 @@ content_blocks:
     component_theme: Branded
   - _bookshop_name: posts-list
     show_posts: true
-    heading: "Blog"
-    content_text: "Get an introduction to some industry topics and stay informed with our in-depth articles."
+    heading:
+    content_text: 
     component_theme: Light
 SEO_options:
   title:
