@@ -3,6 +3,7 @@ languageCode: en-us
 title: Urban
 theme_name: ''
 theme_data: ''
+summaryLength: 40
 module:
   replacements: components.local -> ../component-library
   imports:
@@ -12,3 +13,6 @@ module:
 taxonomies:
   tag: tags
   category: categories
+
+permalinks:
+  blog: :section/:title/
