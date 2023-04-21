@@ -1,3 +1,6 @@
-<div class="c-page-heading">
-    <p>{{ .text }}</p>
+{{ $c := "c-page-heading" }}
+
+<div class="{{ $c }}__inner-wrapper component component-wrapper--{{ .component_theme }}">
+	<h2 class="{{ $c }}__heading">{{ .heading }}</h2>
+	<p class="{{ $c }}__subheading">{{ .subheading }}</p>
 </div>

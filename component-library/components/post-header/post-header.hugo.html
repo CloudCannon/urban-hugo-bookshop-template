@@ -1,3 +1,49 @@
-<div class="c-post-header">
-    <p>{{ .text }}</p>
-</div>
+
+{{ $c := "post-header" }}
+
+
+{{ if .nested }}
+	{{ $c = printf "n-%s" $c }}
+	{{ else }}
+	{{ $c = printf "c-%s" $c }}
+{{ end }}
+
+<div class="{{ $c }}__inner-wrapper">
+	<h3 class="{{ $c }}__heading
+			   {{ if or .post.title .Title }}
+			   	   {{ $c }}__heading--title
+			   {{ end }}">
+			   {{ if ne .post.title .Title }}
+				   <a href="{{ .post.url }}">{{ .post.title }}</a>
+			   {{ else }}
+			   		{{ .post.title }}
+			   {{ end }}
+	</h3>
+{{ if .show_details }}
+	<div class="{{ $c }}__post-info">
+		<div class="{{ $c }}__categories">
+			{{ range .post.categories }}
+				<span class="{{ $c }}__category">
+					<a href="/category/{{ . | urlize }}">{{ . | humanize }}</a>
+				</span>
+			{{ end }}
+		</div>
+		<time datetime="{{ .post.date }}" class="{{ $c }}__date">{{ .post.date.Format "2 January 2006" }}</time>
+	</div>
+	
+		{{ range where site.RegularPages "Section" "staff_members" }}
+			{{ $author := slice }}
+			{{ if eq .File.BaseFileName $.post.author }}
+				{{ $author = $author | append .Params }}
+			{{ end }}
+			{{ range  $author }}
+				<div class="{{ $c }}__author">
+					<img src="{{ .image }}" alt="Photo of {{ .name }}" width="30" height="30">
+					<span>{{ .name }}</span>
+				</div>  
+			{{ end }}
+		{{ end }}
+{{ end }}
+</div> 
+
+

@@ -10,8 +10,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   show_posts: true
-  heading: ""
-  content_text: ""
+  heading: "Blog"
+  content_text: "Get an introduction to some industry topics and stay informed with our in-depth articles."
   component_theme: "Light"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
