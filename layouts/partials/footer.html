@@ -2,32 +2,30 @@
 <div class="{{ $c }}">
   <div class="{{ $c }}__columns">
     {{ range $index, $column := $footer.link_columns }}
-    <div class="{{ $c }}__column">
-      {{ if $column.heading }}
-      <h4>{{ $column.heading }}</h4>
-      {{ end }}
-      <ul>
-        {{ range $index, $link := $column.links }}
-       
-        <li>
-          {{ if $link.link_url }}
-
-          <a
-            class="{{ $c }}__link"
-            href="{{  $link.link_url  }}"
-            {{ if $link.open_in_new_tab }}
-            target="_blank"
-            {{ end }}
-          >
-            {{ partial "footer-link.html" . }}
-          </a>
-          {{ else }}
-          <div class="{{ $c }}__link">{{ partial "footer-link.html" . }}</div>
-          {{ end }}
-        </li>
+      <div class="{{ $c }}__column">
+        {{ if $column.heading }}
+        <h4>{{ $column.heading }}</h4>
         {{ end }}
-      </ul>
-    </div>
+        <ul>
+          {{ range $index, $link := $column.links }}
+            <li>
+              {{ if $link.link_url }}
+                <a
+                  class="{{ $c }}__link"
+                  href="{{  $link.link_url  }}"
+                  {{ if $link.open_in_new_tab }}
+                  target="_blank"
+                  {{ end }}
+                >
+                  {{ partial "footer-link.html" . }}
+                </a>
+              {{ else }}
+                <div class="{{ $c }}__link">{{ partial "footer-link.html" . }}</div>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     {{ end }}
   </div>
   <div class="{{ $c }}__lower-text">

@@ -4,6 +4,7 @@
     {{ $subheading := printf "<p>%s</p>" .Params.subtitle | safeHTML }}
     {{ $c := "c-header-with-image" }}
     {{ $component_theme := "Branded" }}
+    
 	<div class="{{ $c }}
         cms-editor-link 
         component-wrapper
@@ -12,7 +13,8 @@
         {{ else }}
             component-wrapper--light
         {{ end }}">
-        {{ partial "bookshop" (slice "header-with-image" (dict "heading_html" $heading "subheading_html" $subheading "text_color" "#ffffff" "content_alignment" "Left" "button_label" false "button_link_url" false "button_variant" "Transparent" "image" false "component_theme" "Branded")) }}
+
+        {{ partial "bookshop" (slice "sections/header-with-image" (dict "heading_html" $heading "subheading_html" $subheading "text_color" "#ffffff" "content_alignment" "Left" "button_label" false "button_link_url" false "button_variant" "Transparent" "image" false "component_theme" "Branded")) }}
     </div>
 
 
@@ -26,12 +28,13 @@
         {{ else }}
             component-wrapper--light
         {{ end }}">
-        {{ partial "bookshop" (slice "content" (dict "content_html" .Content "component_theme" $component_theme )) }}
+
+        {{ partial "bookshop" (slice "structures/content" (dict "content_html" .Content "component_theme" $component_theme )) }}
 
         {{ $button_text := printf "View %s →" .Title | safeHTML}}
 
 		<div class="component" style="padding-top: 0;">
-            {{ partial "bookshop" (slice "button" (dict "label" $button_text "link_url" .Params.external_url "variant" "Plain Text" "open_in_new_tab" true)) }}
+            {{ partial "bookshop" (slice "generic/button" (dict "label" $button_text "link_url" .Params.external_url "variant" "Plain Text" "open_in_new_tab" true)) }}
 		</div>
     </div>
 </div>
