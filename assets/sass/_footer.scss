@@ -5,10 +5,6 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 50px var(--s-30-50);
-	// padding: calc(50px + var(--component-padding)) 
-	// 		 var(--s-30-50) 
-	// 		 50px 
-	// 		 var(--s-30-50);
 	background-color: var(--footer-color);
 
 	&__columns {
