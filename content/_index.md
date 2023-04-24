@@ -20,32 +20,6 @@ content_blocks:
   - _bookshop_name: sections/gallery
     details:
       show_details: true
-      heading: Latest software, greatest perfomance
-      subheading: >-
-        As a new agency we get reap the benefits of the latest and greatest. We
-        build our websites with the most up to date technology. This ensures
-        your website is fast, efficient and reliable for many years.
-      text_color: red
-      button_label:
-      button_link_url:
-      button_variant.select:
-        - Transparent
-        - Filled
-    content_arrangement: Right
-    image_borders: false
-    component_theme: Light
-    gallery_items:
-      - image: /images/cloudcannon-logo-blue.svg
-        image_title: CloudCannon
-        image_caption: CloudCannon
-        link_url:
-      - image: /images/hugo-logo.svg
-        image_title: Jekyll
-        image_caption: Jekyll
-        link_url:
-  - _bookshop_name: sections/gallery
-    details:
-      show_details: true
       heading: Some of our work
       subheading: >-
         We take pride in our previous work and our happy customers. We cater to
@@ -78,6 +52,32 @@ content_blocks:
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/hydra/
+  - _bookshop_name: sections/gallery
+    details:
+      show_details: true
+      heading: Latest software, greatest perfomance
+      subheading: >-
+        As a new agency we get reap the benefits of the latest and greatest. We
+        build our websites with the most up to date technology. This ensures
+        your website is fast, efficient and reliable for many years.
+      text_color: red
+      button_label:
+      button_link_url:
+      button_variant.select:
+        - Transparent
+        - Filled
+    content_arrangement: Right
+    image_borders: false
+    component_theme: Light
+    gallery_items:
+      - image: /images/cloudcannon-logo-blue.svg
+        image_title: CloudCannon
+        image_caption: CloudCannon
+        link_url:
+      - image: /images/hugo-logo.svg
+        image_title: Jekyll
+        image_caption: Jekyll
+        link_url:
 SEO_options:
   title:
   description:
