@@ -5,7 +5,8 @@
     {{ if gt ( .content_blocks | len ) 0 }}
      {{ $blockCount := 0 }}  
        {{ range .content_blocks }}
-           {{ $c := printf "c-%s" ._bookshop_name }}
+           {{ $c := printf "c-%s" (path.Base ._bookshop_name) }}
+
            <div class="{{ $c }}
                         component-wrapper
                         {{ if .component_theme }}
