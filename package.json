@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "run-p hugo-server bookshop",
     "dev": "run-p hugo-server bookshop",
     "hugo-server-watch": "hugo server -D --watch",
     "hugo-server": "hugo server -D -p 6061",
