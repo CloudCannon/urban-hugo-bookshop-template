@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 content_blocks:
-  - _bookshop_name: header-with-image
+  - _bookshop_name: sections/header-with-image
     heading_html: <h1>Our team</h1>
     subheading_html: <p>Meet our efficient and qualified team.</p>
     text_color: '#ffffff'
@@ -11,7 +11,7 @@ content_blocks:
     button_variant:
     image:
     component_theme: Branded
-  - _bookshop_name: gallery
+  - _bookshop_name: sections/gallery
     details:
       show_details: false
       heading:

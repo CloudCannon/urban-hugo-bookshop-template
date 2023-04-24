@@ -1,13 +1,13 @@
 ---
 title: Contact
 content_blocks:
-  - _bookshop_name: header-with-image
+  - _bookshop_name: sections/header-with-image
     heading_html: <h1>Get in touch today</h1>
     subheading_html: <p>We'd love to help your business.</p>
     text_color: '#ffffff'
     content_alignment: Left
     component_theme: Branded
-  - _bookshop_name: contact-form
+  - _bookshop_name: sections/contact-form
     heading: ""
     lower_text: ""
     form_submission_email: admin@example.com
@@ -19,7 +19,7 @@ content_blocks:
       label: Send Message
       variant: filled
       submit: true
-  - _bookshop_name: map
+  - _bookshop_name: sections/map
     google_maps_api_key: 
     map:
       latitude: '-45.8779128'
