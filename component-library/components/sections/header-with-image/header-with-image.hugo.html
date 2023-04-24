@@ -1,0 +1,20 @@
+{{ $c := "c-header-with-image"}}
+
+<div class="{{ $c }}__inner-wrapper
+			{{ $c }}__inner-wrapper--{{ .content_alignment | urlize }}
+			component">
+	<div class="{{ $c }}__content-wrapper">
+		<div class="{{ $c }}__heading"
+			 style="color: {{ .text_color }}">{{ .heading_html | safeHTML }}</div>
+		<div class="{{ $c }}__subheading"
+			 style="color: {{ .text_color }}">{{ .subheading_html | safeHTML }}</div>
+		{{ if .button.link_url }}
+			{{ partial "bookshop" (slice "generic/button" .button ) }}
+		{{ end }}
+	</div>
+	{{ if .image }}
+		<div class="{{ $c }}__image-wrapper">
+			<img src="{{ .image }}" alt="{{ .heading }}" />
+		</div>
+	{{ end }} 
+</div>

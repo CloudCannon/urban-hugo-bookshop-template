@@ -1,0 +1,24 @@
+{{ $c := "c-image-and-text-blocks"}}
+
+<div class="{{ $c }}__inner-wrapper
+			component">
+	{{ range .blocks }}
+		<div class="{{ $c }}__block
+					{{ $c }}__block--{{ .content_arrangement | urlize }}">
+			<div class="{{ $c }}__content-wrapper">
+				<div class="{{ $c }}__heading">
+					{{ .heading_html | safeHTML }}
+				</div>
+				<div class="{{ $c }}__content">
+					{{ .content_html | safeHTML }}
+                    {{ if .button.label }}
+                        {{ partial "bookshop" (slice "generic/button" .button ) }}
+                    {{ end }}
+				</div>
+			</div>
+			<div class="{{ $c }}__image-wrapper">
+				<img src="{{ .image }}" alt="{{ .heading_html | plainify }}" />
+			</div>
+		</div>
+	{{ end }}
+</div>

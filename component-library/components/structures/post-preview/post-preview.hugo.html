@@ -1,0 +1,20 @@
+{{ $n := "n-post-preview" }}
+
+{{ $nested := .nested }}
+{{ $show_details := .show_details }}
+
+{{range .post }}
+    <div class="{{ $n }}__inner-wrapper">
+        <div class="{{ $n }}__top">
+            <img class="{{ $n }}__preview-image" src="{{  .preview_image }}" alt="{{ .title }} image" /> 
+
+            {{ partial "bookshop" (slice "structures/post-header" (dict "nested" $nested "show_details" $show_details "post" . )) }}
+        </div>
+        <div class="{{ $n }}__content"> 
+            <p>{{.summary}}</p>
+        </div>
+
+        {{ partial "bookshop" (slice "generic/button" (dict "label" "Read More →" "variant" "filled" "link_url" .url )) }}
+
+    </div>
+{{ end }}
