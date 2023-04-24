@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ $l := "archive-layout" }}
+<div class="{{ $l }}">
+	<h1 class="{{ $l }}__heading">Blog</h1>
+
+	<div class="{{ $l }}__tags">
+		<span class="{{ $l }}__tag"><a href="/blog/">{{ .Title | upper }} &#215;</a></span>
+	</div>
+	{{ $tag := .Title }}
+	{{ partial "bookshop" (slice "posts-list" (dict "show_posts" true "tag" $tag )) }}
+</div>
+{{ end }}

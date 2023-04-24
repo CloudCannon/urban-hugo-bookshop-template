@@ -17,6 +17,10 @@
               Bookshop components are accessed using the bookshop tag, 
               using the same syntax as the standard Jekyll include tag.
           -->
+
+          {{ if in .RelPermalink "/categories"}}
+            {{ block "main" . }}{{ end }}
+          {{ end }}
           
           {{ if and (or (in .RelPermalink "/clients/") (in .RelPermalink "/blog/")) (.IsPage) }}
             {{ block "main" . }}{{ end }}

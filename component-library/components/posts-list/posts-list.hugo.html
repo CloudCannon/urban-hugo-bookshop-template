@@ -10,26 +10,52 @@
 			<p class="{{ $c }}__content">{{ .content_text }}</p>
 		{{ end }}
 
-		{{ range where site.RegularPages "Section" "blog"}}
-		{{ $post := slice }}
-		{{ $tags := slice }}
 
-			{{ $post = $post | append ( dict 
-				"title" .Params.title
-				"categories" .Params.categories
-				"preview_image" .Params.SEO_options.image
-				"author" .Params.author_staff_member
-				"date" .Date
-				"summary" .Summary
-				"url" .RelPermalink
-				
-			)}}
-			{{ range $post }}
-				{{ partial "bookshop" (slice "post-preview" (dict "nested" true "show_details" true "post" $post )) }}
+
+		{{ if .tag}}
+
+			{{ $tag := .tag }}
+			{{ range where site.RegularPages "Section" "blog" }}
+			{{ if in .Params.categories $tag }}
+		
+					{{ $post := slice }}
+					{{ $tags := slice }}
+
+						{{ $post = $post | append ( dict 
+							"title" .Params.title
+							"categories" .Params.categories
+							"preview_image" .Params.SEO_options.image
+							"author" .Params.author_staff_member
+							"date" .Date
+							"summary" .Summary
+							"url" .RelPermalink
+							
+						)}}
+						{{ range $post }}
+							{{ partial "bookshop" (slice "post-preview" (dict "nested" true "show_details" true "post" $post )) }}
+						{{ end }}
+					{{ end }}
+				{{ end }}
+		{{ else }}
+			{{ range where site.RegularPages "Section" "blog"}}
+			{{ $post := slice }}
+			{{ $tags := slice }}
+
+				{{ $post = $post | append ( dict 
+					"title" .Params.title
+					"categories" .Params.categories
+					"preview_image" .Params.SEO_options.image
+					"author" .Params.author_staff_member
+					"date" .Date
+					"summary" .Summary
+					"url" .RelPermalink
+					
+				)}}
+				{{ range $post }}
+					{{ partial "bookshop" (slice "post-preview" (dict "nested" true "show_details" true "post" $post )) }}
+				{{ end }}
 			{{ end }}
-
 		{{ end }}
 	</div>
-
 {{ end }}
 	
