@@ -1,8 +1,8 @@
 # Urban
 
-Urban is a Web Agency themed business template for Hugo. Browse through a [live demo](https://placid-beaver.cloudvent.net/). Increase the web presence of your agency with this configurable theme.
+Urban is a Web Agency themed business template for Hugo. Browse through a [live demo](https://gentle-candy.cloudvent.net/). Increase the web presence of your agency with this configurable theme.
 
-![Urban template screenshot](site/static/images/_screenshot.png)
+![Urban template screenshot](static/images/_screenshot.png)
 
 Urban was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll and Hugo.
 The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
