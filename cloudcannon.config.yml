@@ -10,18 +10,33 @@ collections_config:
     filter: strict
     parse_branch_index: true
     path: content
+    _enabled_editors:
+     - visual
+     - content
   blog:
     path: content/blog
     output: true
+    _enabled_editors:
+     - visual
+     - content
   clients:
     path: content/clients
     output: true
+    _enabled_editors:
+     - visual
+     - content
   staff_members:
     path: content/staff_members
     output: true
+    _enabled_editors:
+     - visual
+     - content
   data:
     output: false
     path: data
+    _enabled_editors:
+     - visual
+     - content
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
