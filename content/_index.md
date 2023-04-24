@@ -32,9 +32,9 @@ content_blocks:
         variant: plain-text
         submit: false
     content_arrangement:
-      - Right
+      - Left
     image_borders: true
-    component_theme: Light
+    component_theme: Dark
     gallery_items:
       - image: /images/clients/cause.jpg
         image_title: Item One
