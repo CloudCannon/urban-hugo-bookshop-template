@@ -1,27 +1,27 @@
 ---
 title: Home
 content_blocks:
-  - _bookshop_name: header-with-image
+  - _bookshop_name: sections/header-with-image
     heading_html: <h1>We build websites</h1>
     subheading_html: <p>This is the Urban template from <a href="https://cloudcannon.com" target="_blank">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
     text_color: '#ffffff'
     content_alignment: Left
     button: 
-      _bookshop_name: button
+      _bookshop_name: generic/button
       label: Contact Us
       link_url: /contact/
       variant: filled
       submit: false
     image:
     component_theme: Branded
-  - _bookshop_name: gallery
+  - _bookshop_name: sections/gallery
     details:
       show_details: true
       heading: "Some of our work"
       subheading: "We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure."
       text_color: "#ffffff"
       button:
-        _bookshop_name: button
+        _bookshop_name: generic/button
         label: View Full Portfolio →
         link_url: /contact/
         variant: plain-text
@@ -47,7 +47,7 @@ content_blocks:
         image_title: "Item One"
         image_caption: "Caption Text"
         link_url: "/clients/hydra/"
-  - _bookshop_name: gallery
+  - _bookshop_name: sections/gallery
     details:
       show_details: true
       heading: "Latest software, greatest perfomance"
@@ -64,7 +64,7 @@ content_blocks:
         image_title: "CloudCannon"
         image_caption: "CloudCannon"
         link_url:
-      - image: "/images/jekyll-logo-black-red-transparent.png"
+      - image: "/images/hugo-logo.svg"
         image_title: "Jekyll"
         image_caption: "Jekyll"
         link_url:
