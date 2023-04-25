@@ -10,19 +10,19 @@ module.exports = {
       content_alignment: {
         type: 'select',
         options: {
-          values: ['left', 'center', 'right']
+          values: ['Left', 'Center', 'Right']
         }
       },
       component_theme: {
         type: 'select',
         options: {
-          values: ['light', 'branded', 'dark']
+          values: ['Light', 'Branded', 'Dark']
         }
       },
     _select_data: {
       categories: ['sales', 'tips', 'marketing', 'growth'],
-      content_alignment: ['left', 'center', 'right'],
-      component_theme: ['light', 'branded', 'dark']
+      content_alignment: ['Left', 'Center', 'Right'],
+      component_theme: ['Light', 'Branded', 'Dark']
     },
     paths: {
       data: 'data',
