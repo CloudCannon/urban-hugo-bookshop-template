@@ -29,7 +29,7 @@ module.exports = {
       },
       clients: {
         path: 'content/clients',
-        // url: '/clients/[slug]',
+        base_url: '/clients',
         'output': true,
         name: 'Clients',
         image_key: 'image_path',
@@ -38,7 +38,7 @@ module.exports = {
       },
       // webpages: {
       //   path: 'content/pages',
-      //   // url: '/[slug]',
+      //   url: '/',
       //   'output': true,
       //   name: 'Pages',
       //   icon: 'wysiwyg',
@@ -90,38 +90,38 @@ module.exports = {
           }
         ]
       },
-
-    },
-    blogs: {
-      path: 'content/blog',
-      'output': true,
-      // url: '/blog/[slug]',
-      name: 'Blog',
-      add_options: [
-        {
-          name: 'Read the docs',
-          icon: 'local_library',
-          href: 'https://docs.cloudcannon.com'
-        },
-        {
-          name: 'Add Post',
-          editor: 'content',
-          base_path: '/blog/drafts/'
-        },
-        {
-          name: 'Add Author',
-          editor: 'content',
-          icon: 'person',
-          collection: 'staff-members',
-          schema: 'authors'
+      blogs: {
+        path: 'content/blog',
+        'output': true,
+        base_url: '/blog',
+        name: 'Blog',
+        add_options: [
+          {
+            name: 'Read the docs',
+            icon: 'local_library',
+            href: 'https://docs.cloudcannon.com'
+          },
+          {
+            name: 'Add Post',
+            editor: 'content',
+            base_path: '/blog/drafts/'
+          },
+          {
+            name: 'Add Author',
+            editor: 'content',
+            icon: 'person',
+            collection: 'staff-members',
+            schema: 'authors'
+          }
+        ],
+        schemas: {
+          default: {
+            path: 'schemas/blogs/default.md'
+          }
         }
-      ],
-      schemas: {
-        default: {
-          path: 'schemas/blogs/default.md'
-        }
-      }
+      },
     },
+    
     collection_groups: [
       {
         heading: 'Pages',
