@@ -118,7 +118,7 @@ module.exports = {
       ],
       schemas: {
         default: {
-          path: 'schemas/posts/default.md'
+          path: 'schemas/blogs/default.md'
         }
       }
     },
@@ -132,7 +132,7 @@ module.exports = {
       {
         heading: 'Blogging',
         collections: [
-          'posts',
+          'blogs',
           'drafts',
           'staff-members'
         ]
