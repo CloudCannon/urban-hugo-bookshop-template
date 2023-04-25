@@ -8,7 +8,7 @@ content_blocks:
       href="https://cloudcannon.com">CloudCannon</a>. Urban is a strong
       foundation for the web presence of your agency.</p>
     text_color: '#ffffff'
-    content_alignment: Center
+    content_alignment: Left
     button:
       _bookshop_name: generic/button
       label: Contact Us
@@ -16,7 +16,7 @@ content_blocks:
       variant: filled
       submit: false
     image:
-    component_theme: Dark
+    component_theme: Branded
   - _bookshop_name: sections/gallery
     details:
       show_details: true
