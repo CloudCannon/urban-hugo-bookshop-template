@@ -45,7 +45,7 @@ module.exports = {
       //   _enabled_editors: ['visual', 'content']
       // },
       'staff-members': {
-        path: 'content/staff-members',
+        path: 'content/staff_members',
         _enabled_editors: ['data'],
         name: 'Staff Members',
         image_size: 'contain',
