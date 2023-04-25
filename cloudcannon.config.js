@@ -93,7 +93,7 @@ module.exports = {
 
     },
     blogs: {
-      path: 'content/blogs',
+      path: 'content/blog',
       'output': true,
       // url: '/blog/[slug]',
       name: 'Blog',
