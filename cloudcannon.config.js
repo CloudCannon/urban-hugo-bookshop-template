@@ -7,11 +7,17 @@ module.exports = {
       author: {
         hidden: true
       },
+      content_alignment: {
+        type: 'select',
+        options: {
+          values: ['Left', 'Center', 'Right']
+        }
+      }
 
     },
     _select_data: {
       categories: ['sales', 'tips', 'marketing', 'growth'],
-      content_alignment: ['left', 'center', 'right'],
+      content_alignment: ['Left', 'Center', 'Right']
     },
     paths: {
       data: 'data',
