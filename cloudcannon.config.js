@@ -49,7 +49,7 @@ module.exports = {
       },
       pages: {
         path: 'content',
-        url: '/',
+        base_url: '/',
         'output': true,
         name: 'Pages',
         icon: 'wysiwyg',
