@@ -7,7 +7,7 @@ Urban is a Web Agency themed business template for Hugo. Browse through a [live 
 Urban was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll and Hugo.
 The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
 
-Find more templates, themes and step-by-step Hugo tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
+Find more templates, themes and step-by-step Hugo tutorials at [CloudCannon Resources](https://cloudcannon.com/tutorials/).
 
 [![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/urban-jekyll-bookshop-template)
 
