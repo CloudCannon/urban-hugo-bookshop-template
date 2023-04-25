@@ -17,12 +17,12 @@ module.exports = {
         type: 'select',
         options: {
           values: ['light', 'branded', 'dark']
-      }
-
-    },
+        }
+      },
     _select_data: {
       categories: ['sales', 'tips', 'marketing', 'growth'],
-      content_alignment: ['left', 'center', 'right']
+      content_alignment: ['left', 'center', 'right'],
+      component_theme: ['light', 'branded', 'dark']
     },
     paths: {
       data: 'data',
@@ -157,5 +157,6 @@ module.exports = {
       }
     ],
   }
+};
 
   
