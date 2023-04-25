@@ -112,7 +112,7 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
-  - heading: Blogging
+  - heading: Blog
     collections:
       - blogs
       - drafts
