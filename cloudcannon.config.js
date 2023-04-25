@@ -47,14 +47,14 @@ module.exports = {
         disable_add_folder: true,
         _enabled_editors: ['source']
       },
-      // webpages: {
-      //   path: 'content/pages',
-      //   url: '/',
-      //   'output': true,
-      //   name: 'Pages',
-      //   icon: 'wysiwyg',
-      //   _enabled_editors: ['visual', 'content']
-      // },
+      pages: {
+        path: 'content',
+        url: '/',
+        'output': true,
+        name: 'Pages',
+        icon: 'wysiwyg',
+        _enabled_editors: ['visual', 'content']
+      },
       'staff-members': {
         path: 'content/staff_members',
         _enabled_editors: ['data'],
@@ -137,7 +137,7 @@ module.exports = {
       {
         heading: 'Pages',
         collections: [
-          'webpages'
+          'pages'
         ]
       },
       {
