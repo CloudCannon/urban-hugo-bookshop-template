@@ -10,13 +10,13 @@ module.exports = {
       content_alignment: {
         type: 'select',
         options: {
-          values: ['Left', 'Center', 'Right']
+          values: _select_data.content_alignment
         }
       },
       component_theme: {
         type: 'select',
         options: {
-          values: ['Light', 'Branded', 'Dark']
+          values: _select_data.component_theme
         }
       },
     _select_data: {
@@ -158,5 +158,3 @@ module.exports = {
     ],
   }
 };
-
-  
