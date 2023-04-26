@@ -4,6 +4,10 @@ title: Urban
 theme_name: ''
 theme_data: ''
 summaryLength: 40
+enableRobotsTXT: true
+googleAnalytics: ''
+
+
 module:
   replacements: components.local -> ../component-library
   imports:
