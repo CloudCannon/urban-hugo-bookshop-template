@@ -14,7 +14,8 @@
     <meta property="og:url" content="{{ .Site.Data.general_settings.live_domain_url }}{{ .Page.Permalink }}">
     <meta name="twitter:card" content="{{ .Page.Params.SEO_options.description | default .Site.Data.general_settings.website_description_text }}">
     <meta property="og:site_name" content="{{ .Site.Data.general_settings.website_name }}">
-    <meta name="twitter:image:alt" content="{{ .Site.Data.general_settings.social_media_share_image }}">
+    <meta name="twitter:image:alt" content="{{ .Site.Data.general_settings.social_media_share_image_alt_text }}">
+    <meta name="twitter:image" content="{{ .Site.Data.general_settings.social_media_share_image }}">
     <meta property="twitter:title" content="{{ .Page.Title }}">
     <meta name="twitter:site" content="{{ .Site.Data.general_settings.twitter_handle }}">
     <link rel="canonical" href="{{ .Site.Data.general_settings.live_domain_url }}/">
