@@ -1,3 +1,9 @@
+{{ if site.Params.env_bookshop_live }}
+
+	<h1>This component is not live editable</h1>
+
+{{ else }}
+
 {{ $c := "c-posts-list" }}
 {{ $tag := .Title }}
 
@@ -55,4 +61,7 @@
 		{{ end }}
 	</div>
 {{ end }}
+
 	
+
+{{ end }}
