@@ -31,8 +31,8 @@ content_blocks:
         image_caption: Designer
         link_url: https://twitter.com/CloudCannon
 SEO_options:
-  title:
-  description:
-  image:
+  title: About Urban
+  description: Urban is a Jekyll theme designed to showcase your business.
+  image: /images/favicon.png
   prevent_indexing: false
 ---

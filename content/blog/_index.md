@@ -14,8 +14,8 @@ content_blocks:
     content_text: 
     component_theme: Light
 SEO_options:
-  title:
-  description:
+  title: Blog
+  description: Keep up with the latest news. 
   image: "https://picsum.photos/1200/630"
   prevent_indexing: false
 ---

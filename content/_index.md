@@ -77,9 +77,12 @@ content_blocks:
         image_title: Jekyll
         image_caption: Jekyll
         link_url:
-SEO_options:
-  title:
-  description:
-  image:
+SEO_options: 
+  title: Urban Template
+  description: >-
+    Urban is a strong foundation for the web presence of your agency. It’s
+    responsive, accessible and provides a delightful experience in modern
+    browsers and devices.
+  image: images/favicon.png
   prevent_indexing: false
 ---

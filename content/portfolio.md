@@ -54,9 +54,9 @@ content_blocks:
         image_caption: "Event marketing template for Jekyll"
         link_url: "/clients/malt/"
 SEO_options:
-  title:
-  description:
-  image:
+  title: Portfolio
+  description: See some of our proud customers with exemplary results.
+  image: /images/favicon.png
   prevent_indexing: false
 ---
 

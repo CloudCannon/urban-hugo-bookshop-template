@@ -28,8 +28,8 @@ content_blocks:
       zoom: 13
     component_theme: Light
 SEO_options:
-  title:
-  description:
-  image:
+  title: Contact Urban
+  description: Urban is a Jekyll theme designed to showcase your business.
+  image:  /images/favicon.png
   prevent_indexing: false
 ---
