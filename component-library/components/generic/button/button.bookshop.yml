@@ -33,9 +33,5 @@ _inputs:
         - "filled"
         - "plain-text"
   submit:
-    type: select
-    options:
-      values:
-        - true
-        - false
+    type: checkbox
 

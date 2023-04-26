@@ -19,11 +19,7 @@ _inputs:
         - Branded
         - Dark
   submit:
-    type: select
-    options:
-      values:
-        - true
-        - false
+    type: checkbox
 _select_data:
   categories:
     - sales
