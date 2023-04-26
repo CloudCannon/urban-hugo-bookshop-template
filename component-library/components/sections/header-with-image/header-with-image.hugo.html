@@ -9,7 +9,9 @@
 		<div class="{{ $c }}__subheading"
 			 style="color: {{ .text_color }}">{{ .subheading_html | safeHTML }}</div>
 		{{ if .button }}
-			{{ partial "bookshop" (slice "generic/button" .button ) }}
+			{{ if .button.label}}
+				{{ partial "bookshop" (slice "generic/button" .button ) }}
+			{{ end }}
 		{{ end }}
 	</div>
 	{{ if .image }}
