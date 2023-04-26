@@ -32,4 +32,10 @@ _inputs:
         - "transparent"
         - "filled"
         - "plain-text"
+  submit:
+    type: select
+    options:
+      values:
+        - true
+        - false
 

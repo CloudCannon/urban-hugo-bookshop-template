@@ -18,6 +18,12 @@ _inputs:
         - Light
         - Branded
         - Dark
+  submit:
+    type: select
+    options:
+      values:
+        - true
+        - false
 _select_data:
   categories:
     - sales
@@ -32,6 +38,9 @@ _select_data:
     - Light
     - Branded
     - Dark
+  submit:
+    - true
+    - false
 paths:
   data: data
   collections: content
