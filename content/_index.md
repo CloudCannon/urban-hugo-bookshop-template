@@ -35,19 +35,19 @@ content_blocks:
     image_borders: true
     component_theme: Dark
     gallery_items:
-      - image: /images/clients/cause.jpg
+      - image: /images/clients/cause.webp
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/cause/
-      - image: /images/clients/edition.png
+      - image: /images/clients/edition.webp
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/edition/
-      - image: /images/clients/frisco.jpg
+      - image: /images/clients/frisco.webp
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/frisco
-      - image: /images/clients/hydra.png
+      - image: /images/clients/hydra.webp
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/hydra/

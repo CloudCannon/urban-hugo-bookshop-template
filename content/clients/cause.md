@@ -3,7 +3,7 @@ name: Cause Template
 subtitle: Not for profit template for Jekyll
 external_url: https://github.com/CloudCannon/cause-jekyll-template
 ---
-![Cause template](/images/clients/cause.jpg)
+![Cause template](/images/clients/cause.webp)
 
 Not for profit themed template for Jekyll. Browse through a [live demo](https://clean-oryx.cloudvent.net/). Increase the web presence of a not for profit or cause website with this configurable theme.
 

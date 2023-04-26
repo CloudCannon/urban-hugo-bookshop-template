@@ -3,7 +3,7 @@ name: Malt Template
 subtitle: Event marketing template for Jekyll
 external_url: https://github.com/CloudCannon/malt-jekyll-template
 ---
-![Malt template](/images/clients/malt.jpg)
+![Malt template](/images/clients/malt.webp)
 
 Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
 Increase the web presence of your event with this configurable theme.
