@@ -31,8 +31,7 @@ content_blocks:
         link_url: /contact/
         variant: plain-text
         submit: false
-    content_arrangement:
-      - Left
+    content_arrangement: Left
     image_borders: true
     component_theme: Dark
     gallery_items:
