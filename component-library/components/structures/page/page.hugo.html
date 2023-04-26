@@ -1,6 +1,7 @@
 {{ $c := "c-page" }}
 
 {{ if .content_blocks }}
+          {{ partial "bookshop_bindings" `.content_blocks` }}
 
     {{ if gt ( .content_blocks | len ) 0 }}
      {{ $blockCount := 0 }}  
