@@ -6,9 +6,12 @@ content_blocks:
     subheading_html: <p>See some of our proud customers with exemplary results.</p>
     text_color: '#ffffff'
     content_alignment: Left
-    button_label:
-    button_link_url:
-    button_variant:
+    button:
+      _bookshop_name: generic/button
+      label: 
+      link_url: 
+      variant: 
+      submit: 
     image:
     component_theme: Branded
   - _bookshop_name: sections/gallery
