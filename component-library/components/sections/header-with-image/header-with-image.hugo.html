@@ -8,7 +8,7 @@
 			 style="color: {{ .text_color }}">{{ .heading_html | safeHTML }}</div>
 		<div class="{{ $c }}__subheading"
 			 style="color: {{ .text_color }}">{{ .subheading_html | safeHTML }}</div>
-		{{ if .button.link_url }}
+		{{ if .button }}
 			{{ partial "bookshop" (slice "generic/button" .button ) }}
 		{{ end }}
 	</div>

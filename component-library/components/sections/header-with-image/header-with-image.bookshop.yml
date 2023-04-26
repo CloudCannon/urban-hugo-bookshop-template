@@ -13,7 +13,7 @@ blueprint:
   subheading_html: ""
   text_color: "#ffffff"
   content_alignment: "Center"
-  button: bookshop:generic/button!
+  button: bookshop:generic/button
   image: ""
   component_theme: "Light"
 
