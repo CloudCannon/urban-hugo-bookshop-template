@@ -8,10 +8,11 @@ content_blocks:
     content_alignment: Left
     button:
       _bookshop_name: generic/button
-      label: 
-      link_url: 
-      variant: 
-      submit: 
+      label:
+      link_url:
+      variant: filled
+      open_in_new_tab: false
+      submit: false
     image:
     component_theme: Branded
   - _bookshop_name: sections/gallery
@@ -19,26 +20,25 @@ content_blocks:
       show_details: false
       heading:
       subheading:
-      text_color: "#ffffff"
+      text_color: '#ffffff'
       button_label:
       button_link_url:
       button_variant:
-    content_arrangement: "Left"
+    content_arrangement: Left
     image_borders: true
-    component_theme: "Dark"
+    component_theme: Dark
     gallery_items:
-      - image: "https://unsplash.it/600/503?image=1025&a=.png"
-        image_title: "Anna Thomson"
-        image_caption: "Developer"
-        link_url: "https://twitter.com/CloudCannon"
-      - image: "https://unsplash.it/600/503?image=1062&a=.png"
-        image_title: "James Lopez"
-        image_caption: "Designer"
-        link_url: "https://twitter.com/CloudCannon"
+      - image: https://unsplash.it/600/503?image=1025&a=.png
+        image_title: Anna Thomson
+        image_caption: Developer
+        link_url: https://twitter.com/CloudCannon
+      - image: https://unsplash.it/600/503?image=1062&a=.png
+        image_title: James Lopez
+        image_caption: Designer
+        link_url: https://twitter.com/CloudCannon
 SEO_options:
   title:
   description:
   image:
   prevent_indexing: false
 ---
-
