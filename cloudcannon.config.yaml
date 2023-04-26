@@ -104,7 +104,7 @@ collections_config:
         href: https://docs.cloudcannon.com
       - name: Add Post
         editor: content
-        base_path: /blog/drafts/
+        base_path: /drafts/
       - name: Add Author
         editor: content
         icon: person
