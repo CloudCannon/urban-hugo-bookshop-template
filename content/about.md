@@ -7,12 +7,6 @@ content_blocks:
     text_color: '#ffffff'
     content_alignment: Left
     button:
-      _bookshop_name: generic/button
-      label: tes5
-      link_url: fgf
-      variant: filled
-      open_in_new_tab: false
-      submit: false
     image:
     component_theme: Branded
   - _bookshop_name: sections/gallery
@@ -36,12 +30,6 @@ content_blocks:
         image_title: James Lopez
         image_caption: Designer
         link_url: https://twitter.com/CloudCannon
-  - _bookshop_name: generic/button
-    label: Get Started Free
-    link_url: /sign-up/
-    variant: filled
-    open_in_new_tab: false
-    submit: false
 SEO_options:
   title:
   description:
