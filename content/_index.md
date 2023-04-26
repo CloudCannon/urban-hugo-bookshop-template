@@ -15,7 +15,7 @@ content_blocks:
       link_url: /contact/
       variant: filled
       submit: false
-    image: /images/cloudcannon-logo-blue.svg
+    image: ''
     component_theme: Branded
   - _bookshop_name: sections/gallery
     details:
