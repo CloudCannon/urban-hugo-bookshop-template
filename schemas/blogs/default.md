@@ -4,7 +4,7 @@ date:
 categories:
 author-staff-member:
 show_comments: true
-seo: 
+SEO_options: 
   title:
   description:
   image:
