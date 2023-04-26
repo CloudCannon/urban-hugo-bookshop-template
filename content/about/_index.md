@@ -7,6 +7,12 @@ content_blocks:
     text_color: '#ffffff'
     content_alignment: Left
     button:
+      _bookshop_name: generic/button
+      label:
+      link_url:
+      variant: filled
+      open_in_new_tab: false
+      submit: false
     image:
     component_theme: Branded
   - _bookshop_name: sections/gallery
