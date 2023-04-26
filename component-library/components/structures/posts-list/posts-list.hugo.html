@@ -1,9 +1,6 @@
 {{ $c := "c-posts-list" }}
 {{ $tag := .Title }}
 
-{{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-
-
 {{ if .show_posts }}
 	<div class="{{ $c }}__inner-wrapper">
 		{{ if .heading }}
