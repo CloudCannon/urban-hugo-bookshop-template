@@ -47,6 +47,7 @@ paths:
 collections_config:
   data:
     path: data
+    icon: bar_chart
     disable_add: true
     disable_add_folder: true
   clients:
@@ -54,6 +55,7 @@ collections_config:
     base_url: /clients
     output: true
     name: Clients
+    icon: portrait
     image_key: image_path
     disable_add_folder: true
     _enabled_editors:
@@ -63,7 +65,7 @@ collections_config:
     base_url: /
     output: true
     name: Pages
-    icon: wysiwyg
+    icon: feed
     _enabled_editors:
       - visual
       - content
@@ -74,7 +76,7 @@ collections_config:
     name: Staff Members
     image_size: contain
     text_key: name
-    icon: person
+    icon: groups
     schema_key: _my_schema_definition
     disable_add_folder: true
     disable_file_actions: true
@@ -98,6 +100,7 @@ collections_config:
     output: true
     base_url: /blog
     name: Blog
+    icon: article
     add_options:
       - name: Read the docs
         icon: local_library
