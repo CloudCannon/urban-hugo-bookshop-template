@@ -51,10 +51,6 @@ content_blocks:
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/hydra/
-      - image: ''
-        image_title: ''
-        image_caption: ''
-        link_url: ''
   - _bookshop_name: sections/gallery
     details:
       show_details: true
