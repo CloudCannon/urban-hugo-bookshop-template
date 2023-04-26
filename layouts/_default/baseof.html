@@ -7,44 +7,37 @@
         {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
       </header>
       <main id="documentBody">
-        {{ if not (in .RelPermalink "/components/")}}
           {{ partial "navigation.html" . }} 
-        {{ end }}
-
         <!-- Render any additional page content below the page's content blocks -->
         <div data-bookshop-live="page" data-bookshop-props="page">
           <!-- 
               Bookshop components are accessed using the bookshop tag, 
               using the same syntax as the standard Jekyll include tag.
           -->
+          {{ if .Page.Params.content_blocks}}
+          {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+          {{ partial "bookshop" (slice "structures/page" ( dict "content_blocks" .Params.content_blocks))}}
+          {{else }}
+            {{ block "main" . }}{{ end }}
+          {{ end }}
 
-          {{ if in .RelPermalink "/categories"}}
-            {{ block "main" . }}{{ end }}
-          {{ end }}
-          
-          {{ if and (or (in .RelPermalink "/clients/") (in .RelPermalink "/blog/")) (.IsPage) }}
-            {{ block "main" . }}{{ end }}
-          {{else}}
-            {{ partial "bookshop" (slice "structures/page" ( dict "content_blocks" .Params.content_blocks))}}
-          {{ end }}
-  
         </div>
-      </main>
-      {{ if not (in .RelPermalink "/components/")}}
-      {{ partial "footer.html" . -}}
-      {{ end }}
-  
-  
 
-      <div class="dark-mode-toggle">
-          <a id="js-dark-mode" class="n-button">
-              {{- $svg := "svg/darklightmode.svg" -}}
-              {{- if $svg }}
-                  {{- partial $svg . -}}
-              {{- end }}
-              <span id="js-mode-label">Dark Mode</span>
-          </a>
-      </div>
+      </main>
+      
+      <footer>
+        {{ partial "footer.html" . -}}
+  
+        <div class="dark-mode-toggle">
+            <a id="js-dark-mode" class="n-button">
+                {{- $svg := "svg/darklightmode.svg" -}}
+                {{- if $svg }}
+                    {{- partial $svg . -}}
+                {{- end }}
+                <span id="js-mode-label">Dark Mode</span>
+            </a>
+        </div>
+      </footer>
       
       
       <script type="text/javascript" src="/js/dark-mode.js"></script>
