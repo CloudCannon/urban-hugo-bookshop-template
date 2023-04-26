@@ -1,9 +1,9 @@
 website_theme: Urban
 website_name: Urban
-live_domain_url:
+live_domain_url: https://gentle-candy.cloudvent.net
 website_description_text: 'Urban is a free responsive HTML5 website template by TEMPLATED. It is released under the Creative Commons Attribution 3.0 license, so you are pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)'
 social_media_share_image: /images/_screenshot.png
-twitter_handle:
+twitter_handle: 'cloudcannon'
 icons:
   small_bookmark_icon_image: /images/icons/favicon-16.jpg
   large_bookmark_icon_image: /images/icons/favicon-32.jpg
