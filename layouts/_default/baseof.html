@@ -16,7 +16,9 @@
           -->
           {{ if .Page.Params.content_blocks}}
           {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-          {{ partial "bookshop" (slice "structures/page" ( dict "content_blocks" .Params.content_blocks))}}
+          {{/*  {{ partial "bookshop" (slice "structures/page" ( dict "content_blocks" .Params.content_blocks))}}  */}}
+          {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+
           {{else }}
             {{ block "main" . }}{{ end }}
           {{ end }}
