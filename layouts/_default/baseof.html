@@ -15,7 +15,7 @@
               using the same syntax as the standard Jekyll include tag.
           -->
           {{ if .Page.Params.content_blocks}}
-          {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+          {{/*  {{ partial "bookshop_bindings" `.Params.content_blocks` }}  */}}
           {{ partial "bookshop" (slice "structures/page" ( dict "content_blocks" .Params.content_blocks))}}
 
           {{/*  {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}  */}}
