@@ -22,8 +22,7 @@ content_blocks:
         link_url:
         variant:
         submit:
-    content_arrangement:
-      - Left
+    content_arrangement: Left
     image_borders: true
     component_theme: "Dark"
     gallery_items:
