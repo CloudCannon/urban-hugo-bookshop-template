@@ -4,7 +4,7 @@
     {{ range $index, $column := $footer.link_columns }}
       <div class="{{ $c }}__column">
         {{ if $column.heading }}
-        <h4>{{ $column.heading }}</h4>
+        <h3>{{ $column.heading }}</h3>
         {{ end }}
         <ul>
           {{ range $index, $link := $column.links }}

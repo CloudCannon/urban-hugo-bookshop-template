@@ -43,7 +43,7 @@ paths:
   includes: layouts
   layouts: layouts
   static: static
-  uploads: static/uploads
+  uploads: static/images
 collections_config:
   data:
     path: data

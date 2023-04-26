@@ -11,7 +11,7 @@
 					{{ if lt $item_number 3 }}
 					{{ $c }}__details--with-details-stacked
 					{{ end }}">
-			<h3>{{ .details.heading }}</h3>
+			<h2>{{ .details.heading }}</h2>
 			<p>{{ .details.subheading }}</p>
 			{{ if .details.button }}
                 {{ partial "bookshop" (slice "generic/button" .details.button) }}
