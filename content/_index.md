@@ -31,9 +31,9 @@ content_blocks:
         link_url: /contact/
         variant: plain-text
         submit: false
-    content_arrangement: Right
+    content_arrangement: Left
     image_borders: true
-    component_theme: Branded
+    component_theme: Dark
     gallery_items:
       - image: /images/clients/cause.jpg
         image_title: Item One
