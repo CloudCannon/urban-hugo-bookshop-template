@@ -7,7 +7,7 @@ external_url: https://github.com/CloudCannon/cause-jekyll-template
 
 Not for profit themed template for Jekyll. Browse through a [live demo](https://clean-oryx.cloudvent.net/). Increase the web presence of a not for profit or cause website with this configurable theme.
 
-Made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
+Cause was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
 
 Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
