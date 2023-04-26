@@ -15,7 +15,7 @@ content_blocks:
       link_url: /contact/
       variant: filled
       submit: false
-    image:
+    image: /images/cloudcannon-logo-blue.svg
     component_theme: Branded
   - _bookshop_name: sections/gallery
     details:
@@ -51,6 +51,10 @@ content_blocks:
         image_title: Item One
         image_caption: Caption Text
         link_url: /clients/hydra/
+      - image: ''
+        image_title: ''
+        image_caption: ''
+        link_url: ''
   - _bookshop_name: sections/gallery
     details:
       show_details: true
