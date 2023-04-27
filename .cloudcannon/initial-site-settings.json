@@ -29,7 +29,7 @@
 		"log": false,
 		"minify": false,
 		"noChmod": false,
-		"noTimes": false,
+		"noTimes": true,
 		"pathWarnings": false,
 		"mem": false,
 		"quiet": false,
