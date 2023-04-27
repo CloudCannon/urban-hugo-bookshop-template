@@ -11,7 +11,7 @@
 			   {{ if or .post.title .Title }}
 			   	   {{ $c }}__heading--title
 			   {{ end }}">
-			   {{ if ne .post.title .Title }}
+			   {{ if .nested }}
 				   <a href="{{ .post.url }}">{{ .post.title }}</a>
 			   {{ else }}
 			   		{{ .post.title }}
