@@ -24,7 +24,6 @@ content_blocks:
       subheading: >-
         We take pride in our previous work and our happy customers. We cater to
         any sector to boost business and increase exposure.
-      text_color: '#ffffff'
       button:
         _bookshop_name: generic/button
         label: View Full Portfolio →
