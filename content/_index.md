@@ -56,15 +56,8 @@ content_blocks:
       show_details: true
       heading: Latest software, greatest perfomance
       subheading: >-
-        As a new agency we get reap the benefits of the latest and greatest. We
-        build our websites with the most up to date technology. This ensures
+        We build our websites with the most up to date technology. This ensures
         your website is fast, efficient and reliable for many years.
-      text_color: red
-      button_label:
-      button_link_url:
-      button_variant.select:
-        - Transparent
-        - Filled
     content_arrangement: Right
     image_borders: false
     component_theme: Light
