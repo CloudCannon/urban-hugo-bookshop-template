@@ -9,7 +9,7 @@ The component library is built and maintained for use with [Bookshop](https://gi
 
 Find more templates, themes and step-by-step Hugo tutorials at [CloudCannon Resources](https://cloudcannon.com/tutorials/).
 
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/urban-jekyll-bookshop-template)
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/urban-hugo-bookshop-template)
 
 ## Features
 
