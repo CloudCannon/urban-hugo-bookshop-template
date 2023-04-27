@@ -69,7 +69,7 @@ content_blocks:
     image_borders: false
     component_theme: Light
     gallery_items:
-      - image: /images/cloudcannon-logo-blue.svg
+      - image: /images/cloudcannon-logo.png
         image_title: CloudCannon
         image_caption: CloudCannon
         link_url:
