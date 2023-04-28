@@ -59,12 +59,12 @@ Urban is already optimised for adding, updating and removing pages, and componen
 
 ### Posts
 
-* Add, update or remove a post in the *Posts* collection.
+* Add, update or remove a post in the *blog* collection.
 * The **Staff Author** field links to members in the **Staff Members** collection.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+* Change the defaults when new posts are created in `schemas/blogs/defaults.md`.
 
 ## Collections
-* When adding or removing collections, update the Explore View options within the `_config.yml` file. For more information see CloudCannon's documentation on [Explore Groups](https://cloudcannon.com/documentation/edit/interfaces/explore/#keyword:_explore).
+* When adding or removing collections, update the Explore View options within the `config.yaml` file. For more information see CloudCannon's documentation on [Explore Groups](https://cloudcannon.com/documentation/edit/interfaces/explore/#keyword:_explore).
 
 ### Contact Forms
 
