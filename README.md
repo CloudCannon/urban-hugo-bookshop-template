@@ -1,4 +1,4 @@
-# Urban
+# Urban  [ LEGACY TEMPLATE NO LONGER MAINTAINED ]
 
 Urban is a Web Agency themed business template for Hugo. Browse through a [live demo](https://gentle-candy.cloudvent.net/). Increase the web presence of your agency with this configurable theme.
 
